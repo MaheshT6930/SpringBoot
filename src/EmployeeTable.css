@@ -1,0 +1,35 @@
+.table-container {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 16px;
+  color: hsl(0, 84%, 47%);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: hsl(144, 22%, 95%);
+}
+
+th, td {
+  border: 1px solid hsl(245, 83%, 30%);
+  padding: 10px;
+}
+
+th {
+  background-color: hwb(0 90% 6%);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: hsl(73, 87%, 45%);
+}
+
+tr:hover {
+  background-color: lab(30.8% 69.35 -86.92);
+}

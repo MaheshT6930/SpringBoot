@@ -5,20 +5,20 @@ import EmployeeTable from './EmployeeTable';
 import Navbar from './Navbar';
 import Carousel from './Carousel';
 import CardList from './CardList';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Department from './Department';
 
 function App() {
   return (
     <div>
+     <Router>
       <Navbar/>
-      <Carousel/>
-      <CardList/>
-    
-      
-      <Pro name = "Mobile"  Price= "5000" Discription = "A sleek smartphone with powerful performance and all-day battery life"/>
-      <Pro name = "Mobile2"  Price= "5000" Discription = "A sleek smartphone with powerful performance and all-day battery life"/>
-     
-
-      <EmployeeTable/>
+      <Routes>
+        <Route path = '/' element = {<Carousel/>}/>
+        <Route path = '/employee' element = {<EmployeeTable/>}/>
+        <Route path = '/department' element = {<Department/>}/>
+      </Routes>
+     </Router>
     </div>
     
   );

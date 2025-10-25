@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -13,29 +14,20 @@ export default function Navbar() {
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home
+        <Link class="nav-link" to ="/">Home
           <span class="sr-only">(current)</span>
-        </a>
+        </Link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Employee</a>
+        <Link class="nav-link" to ="/employee">EmployeeTable</Link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Department</a>
+        <Link class="nav-link" to ="department">Department</Link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <Link class="nav-link" to ="Product">Product</Link>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      </li>
+      
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search"/>
